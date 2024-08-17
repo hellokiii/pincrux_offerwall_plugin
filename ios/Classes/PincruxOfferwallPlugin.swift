@@ -1,14 +1,25 @@
 import Flutter
 import UIKit
+import PincruxOfferwall
 
 public class PincruxOfferwallPlugin: NSObject, FlutterPlugin {
+  var offerwall: PincruxOfferwallSDK?
+    private var controller: FlutterViewController?
+
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "pincrux_offerwall_plugin", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "pincrux_offerwall_plugin",
+                                       binaryMessenger: registrar.messenger())
     let instance = PincruxOfferwallPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
+      
+      if let viewController = UIApplication.shared.windows.first?.rootViewController as? FlutterViewController {
+        instance.controller = viewController
+      }
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
+    
+
     switch call.method {
     case "getPlatformVersion":
       result("iOS " + UIDevice.current.systemVersion)
@@ -31,28 +42,28 @@ public class PincruxOfferwallPlugin: NSObject, FlutterPlugin {
             }
         }
         
-    case "startOfferwall":
+    case "startOfferwall": 
         if self.isOfferwallNotNil() {
-            self.offerwall?.startOfferwall(vc: controller)
+            self.offerwall?.startOfferwall(vc: controller!)
         }
         
     case "startPincruxOfferwallViewType":
         if self.isOfferwallNotNil() {
             let viewtypeVC = UIViewController(nibName: "ViewTypeViewController", bundle: nil) as? ViewTypeViewController ?? ViewTypeViewController()
-            controller.modalPresentationStyle = .fullScreen
-            controller.present(viewtypeVC, animated: true)
+            controller!.modalPresentationStyle = .fullScreen
+            controller!.present(viewtypeVC, animated: true)
         }
         
     case "startPincruxOfferwallAdDetail":
         if self.isOfferwallNotNil(),
            let args = call.arguments as? Dictionary<String, Any>,
            let appkey = args["appkey"] as? String {
-            self.offerwall?.startOfferwallDetailVC(vc: controller, appKey: appkey)
+            self.offerwall?.startOfferwallDetailVC(vc: controller!, appKey: appkey)
         }
         
     case "startPincruxOfferwallContact":
         if self.isOfferwallNotNil(){
-            self.offerwall?.startOfferwallContactVC(vc: controller)
+            self.offerwall?.startOfferwallContactVC(vc: controller!)
         }
         
     case "setOfferwallType":
