@@ -55,7 +55,18 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: InkWell(
+            onTap: () {
+              PincruxOfferwallPlugin.init('', '');
+              PincruxOfferwallPlugin.startPincruxOfferwall();
+            },
+            child: Container(
+              alignment: Alignment.center,
+                width: 100, height: 100,
+                color: Colors.blue,
+                child: Text('gogo')
+            ),
+          ),
         ),
       ),
     );

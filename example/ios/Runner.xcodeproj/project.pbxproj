@@ -16,6 +16,9 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		C667C40E2C70CF83000E722A /* PincruxOfferwall.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C667C40D2C70CF83000E722A /* PincruxOfferwall.xcframework */; };
+		C667C4112C70F43F000E722A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C667C4102C70F43F000E722A /* AdSupport.framework */; };
+		C667C4132C70F450000E722A /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C667C4122C70F450000E722A /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		A96094AE228AECA56BDF0113 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		B507112E0F77332EEDA4C93F /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD5FCC9AF743A1206A32301 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C667C40D2C70CF83000E722A /* PincruxOfferwall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PincruxOfferwall.xcframework; path = ../../../../../Downloads/PincruxOfferwall.xcframework; sourceTree = "<group>"; };
+		C667C4102C70F43F000E722A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C667C4122C70F450000E722A /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		E140C9407065AE83AF2C36FC /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.debug.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E553C5F0D503EC0FFA970582 /* Pods-RunnerTests.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.profile.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.profile.xcconfig"; sourceTree = "<group>"; };
 		FC899F604777DE117A5D9DD3 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C667C4132C70F450000E722A /* AppTrackingTransparency.framework in Frameworks */,
+				C667C4112C70F43F000E722A /* AdSupport.framework in Frameworks */,
+				C667C40E2C70CF83000E722A /* PincruxOfferwall.xcframework in Frameworks */,
 				94284542ED51C00A8C889B0E /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +99,9 @@
 		24FFD5645600D92CC6447415 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C667C4122C70F450000E722A /* AppTrackingTransparency.framework */,
+				C667C4102C70F43F000E722A /* AdSupport.framework */,
+				C667C40D2C70CF83000E722A /* PincruxOfferwall.xcframework */,
 				BFD5FCC9AF743A1206A32301 /* Pods_Runner.framework */,
 				B507112E0F77332EEDA4C93F /* Pods_RunnerTests.framework */,
 			);
