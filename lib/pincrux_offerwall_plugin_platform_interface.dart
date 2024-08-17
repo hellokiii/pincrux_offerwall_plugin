@@ -26,4 +26,62 @@ abstract class PincruxOfferwallPluginPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<void> init(String? pubkey, String? usrkey) {
+    throw UnimplementedError('init() has not been implemented.');
+  }
+
+  Future<void> setOfferwallViewControllerType(int type) {
+    throw UnimplementedError('setOfferwallViewControllerType() has not been implemented.');
+  }
+
+  Future<void> startPincruxOfferwall() {
+    throw UnimplementedError('startPincruxOfferwall() has not been implemented.');
+  }
+
+  Future<void> startPincruxOfferwallViewType() {
+    throw UnimplementedError('startPincruxOfferwallViewType() has not been implemented.');
+  }
+
+  Future<void> startPincruxOfferwallAdDetail(String? appkey) {
+    throw UnimplementedError('startPincruxOfferwallAdDetail() has not been implemented.');
+  }
+
+  Future<void> startPincruxOfferwallContact() {
+    throw UnimplementedError('startPincruxOfferwallContact() has not been implemented.');
+  }
+
+  // Offerwall View Options
+  Future<void> setOfferwallType(int type) {
+    throw UnimplementedError('setOfferwallType() has not been implemented.');
+    // await _channel.invokeMethod("setOfferwallType", type);
+  }
+
+  Future<void> setEnableTab(bool isEnable) {
+    throw UnimplementedError('setEnableTab() has not been implemented.');
+  }
+
+  Future<void> setOfferwallTitle(String? title) {
+    throw UnimplementedError('setOfferwallTitle() has not been implemented.');
+  }
+
+  Future<void> setOfferwallThemeColor(String? color) {
+    throw UnimplementedError('setOfferwallThemeColor() has not been implemented.');
+  }
+
+  Future<void> setEnableScrollTopButton(bool isEnable) {
+    throw UnimplementedError('setEnableScrollTopButton() has not been implemented.');
+  }
+
+  Future<void> setAdDetail(bool isEnable) {
+    throw UnimplementedError('setAdDetail() has not been implemented.');
+  }
+
+  Future<void> setDisableCPS(bool isDisable) {
+    throw UnimplementedError('setDisableCPS() has not been implemented.');
+  }
+
+  Future<void> setDarkMode(int mode) {
+    throw UnimplementedError('setDarkMode() has not been implemented.');
+  }
 }
