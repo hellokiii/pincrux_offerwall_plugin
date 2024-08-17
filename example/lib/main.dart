@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -57,7 +59,10 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: InkWell(
             onTap: () {
-              PincruxOfferwallPlugin.init('', '');
+              String pincruxPupKey = Platform.isIOS
+                  ? '911775'
+                  : '911774';
+              PincruxOfferwallPlugin.init(pincruxPupKey, '0');
               PincruxOfferwallPlugin.startPincruxOfferwall();
             },
             child: Container(
