@@ -25,17 +25,22 @@ public class PincruxOfferwallPlugin implements FlutterPlugin, MethodCallHandler,
   private MethodChannel channel;
   private Activity activity;
 
-  private final PincruxOfferwall offerwall = PincruxOfferwall.getInstance();
+  private PincruxOfferwall offerwall;
+
 
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
+    Log.d("123onAttachedToEngine", "start");
     channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "pincrux_offerwall_plugin");
     channel.setMethodCallHandler(this);
   }
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
+    Log.d("123onMethodCall", "success");
+    Log.d("000onMethodCall", call.method);
+    offerwall = PincruxOfferwall.getInstance();
 //    if (call.method.equals("getPlatformVersion")) {
 //      result.success("Android " + android.os.Build.VERSION.RELEASE);
 //    } else {
@@ -146,6 +151,7 @@ public class PincruxOfferwallPlugin implements FlutterPlugin, MethodCallHandler,
 
   @Override
   public void onAttachedToActivity(@NonNull ActivityPluginBinding binding) {
+    Log.d("000onAttachedToActivity", "success");
     activity = binding.getActivity();
   }
 

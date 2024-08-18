@@ -7,6 +7,7 @@ class PincruxOfferwallPlugin {
   }
 
   static void init(String? pubkey, String? usrkey) async {
+    print('flutter init done');
     return PincruxOfferwallPluginPlatform.instance.init(pubkey, usrkey);
   }
 

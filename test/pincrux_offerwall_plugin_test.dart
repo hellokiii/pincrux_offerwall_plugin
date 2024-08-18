@@ -10,6 +10,90 @@ class MockPincruxOfferwallPluginPlatform
 
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+
+  @override
+  Future<void> init(String? pubkey, String? usrkey) {
+    // TODO: implement init
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setAdDetail(bool isEnable) {
+    // TODO: implement setAdDetail
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setDarkMode(int mode) {
+    // TODO: implement setDarkMode
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setDisableCPS(bool isDisable) {
+    // TODO: implement setDisableCPS
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setEnableScrollTopButton(bool isEnable) {
+    // TODO: implement setEnableScrollTopButton
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setEnableTab(bool isEnable) {
+    // TODO: implement setEnableTab
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setOfferwallThemeColor(String? color) {
+    // TODO: implement setOfferwallThemeColor
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setOfferwallTitle(String? title) {
+    // TODO: implement setOfferwallTitle
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setOfferwallType(int type) {
+    // TODO: implement setOfferwallType
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> setOfferwallViewControllerType(int type) {
+    // TODO: implement setOfferwallViewControllerType
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> startPincruxOfferwall() {
+    // TODO: implement startPincruxOfferwall
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> startPincruxOfferwallAdDetail(String? appkey) {
+    // TODO: implement startPincruxOfferwallAdDetail
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> startPincruxOfferwallContact() {
+    // TODO: implement startPincruxOfferwallContact
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> startPincruxOfferwallViewType() {
+    // TODO: implement startPincruxOfferwallViewType
+    throw UnimplementedError();
+  }
 }
 
 void main() {
@@ -26,4 +110,5 @@ void main() {
 
     expect(await pincruxOfferwallPlugin.getPlatformVersion(), '42');
   });
+
 }
