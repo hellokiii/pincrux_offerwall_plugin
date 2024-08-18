@@ -42,8 +42,6 @@ public class PincruxOfferwallPlugin implements FlutterPlugin, MethodCallHandler,
 //      result.notImplemented();
 //    }
 
-    Log.d("call.method: ", call.method);
-
     switch (call.method) {
       case "getPlatformVersion": {
         result.success("Android " + android.os.Build.VERSION.RELEASE);
