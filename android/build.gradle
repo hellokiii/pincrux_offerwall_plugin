@@ -16,6 +16,9 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs project(':pincrux_offerwall_plugin').file('libs')
+        }
     }
 }
 
@@ -43,7 +46,7 @@ android {
         testImplementation 'org.mockito:mockito-core:5.0.0'
         implementation 'androidx.appcompat:appcompat:1.1.0'
         implementation 'com.google.android.material:material:1.6.0'
-        compileOnly files('libs/pincrux_offerwall.aar')
+        implementation(name: 'pincrux_offerwall', ext: 'aar')
     }
 
     testOptions {

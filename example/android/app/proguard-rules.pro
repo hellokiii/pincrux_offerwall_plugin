@@ -1,0 +1,3 @@
+-keep class com.pincrux.offerwall.**{*;}
+-keep interface com.pincrux.offerwall.**{*;}
+-dontwarn com.pincrux.offerwall.**

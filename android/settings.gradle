@@ -1,1 +1,2 @@
 rootProject.name = 'pincrux_offerwall_plugin'
+include ':pincrux_offerwall'
