@@ -24,4 +24,5 @@ A new Flutter project.
   s.xcconfig = { 'OTHER_LDFLAGS' => '-framework PincruxOfferwall' }
   s.vendored_frameworks = 'PincruxOfferwall.xcframework'
   s.preserve_paths = 'PincruxOfferwall.xcframework/**/*'
+  s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end
