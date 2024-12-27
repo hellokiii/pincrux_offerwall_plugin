@@ -2,7 +2,7 @@ PODS:
   - Flutter (1.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - pincrux_offerwall_plugin (0.0.1):
+  - pincrux_offerwall_plugin (0.0.2):
     - Flutter
 
 DEPENDENCIES:
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   integration_test: 13825b8a9334a850581300559b8839134b124670
-  pincrux_offerwall_plugin: 714b6f668bd18aea173ae523931fa7d7b500a31c
+  pincrux_offerwall_plugin: 73d9a2f850d44f2247319283d95429a1e92dfdc6
 
 PODFILE CHECKSUM: dd71bac1d041277cb4891298e268fb668369b839
 
