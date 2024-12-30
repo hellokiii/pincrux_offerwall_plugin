@@ -37,6 +37,7 @@ target 'Runner' do
   end
 end
 
+# xcrun bitcode_strip -r /Users/ichangmin/StudioProjects/FuneasyProjects/pincrux_offerwall_plugin/ios/PincruxOfferwall.xcframework/ios-arm64/PincruxOfferwall.framework/PincruxOfferwall -o /Users/ichangmin/StudioProjects/FuneasyProjects/pincrux_offerwall_plugin/ios/PincruxOfferwall.xcframework/ios-arm64/PincruxOfferwall.framework/PincruxOfferwall
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         flutter_additional_ios_build_settings(target)
@@ -45,3 +46,5 @@ post_install do |installer|
         end
     end
 end
+
+
