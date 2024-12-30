@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'pincrux_offerwall_plugin'
-  s.version          = '0.0.2'
+  s.version          = '0.0.1'
   s.summary          = 'A new Flutter project.'
   s.description      = <<-DESC
 A new Flutter project.
@@ -18,11 +18,11 @@ A new Flutter project.
   s.platform = :ios, '11.0'
 
   # Flutter.framework does not contain a i386 slice.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386', 'ENABLE_BITCODE' => 'NO' }
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
 
   s.xcconfig = { 'OTHER_LDFLAGS' => '-framework PincruxOfferwall' }
   s.vendored_frameworks = 'PincruxOfferwall.xcframework'
   s.preserve_paths = 'PincruxOfferwall.xcframework/**/*'
-  s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end
+
