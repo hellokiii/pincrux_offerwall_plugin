@@ -41,7 +41,6 @@ class _MyAppState extends State<MyApp> {
               String pincruxPupKey = Platform.isIOS
                   ? '911775'
                   : '911774';
-              print('dddd');
               PincruxOfferwallPlugin.init(pincruxPupKey, '0');
               PincruxOfferwallPlugin.startPincruxOfferwall();
             },
