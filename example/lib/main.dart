@@ -37,12 +37,14 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: InkWell(
-            onTap: () {
+            onTap: () async {
               String pincruxPupKey = Platform.isIOS
                   ? '911775'
                   : '911774';
               PincruxOfferwallPlugin.init(pincruxPupKey, '0');
-              PincruxOfferwallPlugin.startPincruxOfferwall();
+              print('start');
+              await PincruxOfferwallPlugin.startPincruxOfferwall();
+              print('done');
             },
             child: Container(
               alignment: Alignment.center,

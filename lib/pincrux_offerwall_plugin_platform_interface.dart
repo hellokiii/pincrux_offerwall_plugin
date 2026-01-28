@@ -35,7 +35,7 @@ abstract class PincruxOfferwallPluginPlatform extends PlatformInterface {
     throw UnimplementedError('setOfferwallViewControllerType() has not been implemented.');
   }
 
-  Future<void> startPincruxOfferwall() {
+  Future<void> startPincruxOfferwall() async {
     throw UnimplementedError('startPincruxOfferwall() has not been implemented.');
   }
 

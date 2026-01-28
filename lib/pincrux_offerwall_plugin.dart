@@ -7,7 +7,6 @@ class PincruxOfferwallPlugin {
   }
 
   static void init(String? pubkey, String? usrkey) async {
-    print('flutter init done');
     return PincruxOfferwallPluginPlatform.instance.init(pubkey, usrkey);
   }
 
@@ -15,8 +14,8 @@ class PincruxOfferwallPlugin {
     return PincruxOfferwallPluginPlatform.instance.setOfferwallViewControllerType(type);
   }
 
-  static void startPincruxOfferwall() async {
-    return PincruxOfferwallPluginPlatform.instance.startPincruxOfferwall();
+  static Future<void> startPincruxOfferwall() async {
+    return await PincruxOfferwallPluginPlatform.instance.startPincruxOfferwall();
   }
 
   static void startPincruxOfferwallViewType() async {

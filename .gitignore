@@ -32,3 +32,6 @@ build/
 gradlew
 gradlew.bat
 local.properties
+
+# FVM Version Cache
+.fvm/
